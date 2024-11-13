@@ -1,0 +1,153 @@
+body {
+    background-color: #12111c;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.large-text figcaption {
+    font-size: 2em;
+}
+
+body.large-text .altText {
+    font-size: 2em;
+}
+
+body.large-text {
+    font-size: 2em;
+}
+
+body.dark-mode {
+    background-color: #12111c;
+    color: #f8f8f8;
+}
+
+body.light-mode {
+    background-color: #f5f5f5;
+}
+
+body.light-mode {
+    color: #12111c;
+}
+
+body.light-mode .title {
+    color: #12111c;
+}
+
+body.light-mode figcaption {
+    color: #12111c;
+}
+
+body.light-mode video {
+    box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    color: white;
+}
+
+.btnDiv {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #ffeb3b, #fdd835);
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #caa70c, #eddb37);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+.button:focus {
+    outline: 3px solid #ffb700; /* or a contrasting color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5rem 1rem rgba(255, 255, 255, 0.3);
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.imgWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 500px;
+}
+
+.altText {
+    display: none;
+    margin-top: 8px;
+    font-size: 2rem;
+    color: #f8f8f8;
+}
+
+body.light-mode .altText {
+    color: #12111c;
+}
+  
+body.dark-mode .altText {
+    color: #f8f8f8;
+}
+
+.imgBtn {
+    margin: 2rem;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accessibility</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">The Real World</h1>
+      <div class="btnDiv">
+        <button class="sizeBtn button" aria-label="Increase Text Size">
+          Increase Text Size
+        </button>
+        <button
+          class="button"
+          onclick="toggleColorScheme()"
+          arialabel="Toggle between light and dark color schemes"
+        >
+          Toggle Color Scheme
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <figure>
+        <video controls width="640">
+          <source src="adems intro.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <figcaption>
+          Audio clip from Professor Adam. (2024, April 9). *Crypto Investing
+          Course Intro*
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="imgContainer">
+      <button
+        class="button imgBtn"
+        onclick="displayAltText()"
+        aria-label="Toggle Alt Text for Images"
+      >
+        Toggle Alt Text for Images
+      </button>
+      <div class="imgWrapper">
+        <img
+          class="image"
+          src="image1.jpg"
+          alt="Razor Microphone on black desk - taken at my house in my room, 11/09/2024"
+        />
+        <p class="altText"></p>
+      </div>
+      <div class="imgWrapper">
+        <img
+          class="image"
+          src="image2.jpg"
+          alt="Red ThermolFlask water bottle on black desk - taken at my house in my room, 11/10/2024"
+        />
+        <p class="altText"></p>
+      </div>
+      <div class="imgWrapper">
+        <img
+          class="image"
+          src="image3.jpg"
+          alt="Google smart watch on black shelf - taken at my house in my room, 11/10/2024"
+        />
+        <p class="altText"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
